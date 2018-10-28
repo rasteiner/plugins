@@ -1,4 +1,4 @@
-Community/slack-gathered tips for working on kirby plugins. 
+Community/slack-gathered tips for working on kirby plugins. <br/>
 Unofficial documentation for Kirby CMS. It is **not** maintained by the Kirby team.
 
 - [Plugin architecture](#plugin-architecture)
@@ -17,7 +17,7 @@ Unofficial documentation for Kirby CMS. It is **not** maintained by the Kirby te
 
 #### Build process
 
-By *rasteiner*. 
+By `rasteiner`. 
 
 - Add this `package.json` in the root of your plugin folder:
 
@@ -124,7 +124,7 @@ $t('pluralized.string', {}, number) // vuex-i18n, number is the 3rd argument
 
 Here's a snippet to get the current language code (remove `.code` to get the whole language object) and listen to page language change on multi-language websites:
 
-```
+```javascript
 computed: {
     currentLanguage() {
         return this.$store.state.languages.current.code // returns en, fr, ...
