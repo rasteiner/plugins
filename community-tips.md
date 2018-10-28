@@ -72,7 +72,7 @@ Unofficial documentation for Kirby CMS. It is **not** maintained by the Kirby te
 
 
 #### Composer
-To make a simple plugin installable with composer, you should create add a `composer.json` file to the plugin root. 
+To make a simple plugin installable with composer, you should add a `composer.json` file to the plugin root. 
 
 ```json
 {
@@ -101,7 +101,8 @@ The dependendy on `getkirby/cms` makes sure your plugin is loaded after kirby is
 The repository you distribute on packagist.org must contain the compiled frontend files (index.js and index.css).  
 If you prefer to not include dist files in your repository, you should consider using a CI service to automatically build and release your plugin. You can read more about this [here](release-zips-with-circleci.md). 
 
-If your plugin is simple, doesn't rely on other composer packages or other php files this is all you need. Otherwise you should consider a [more advanced setup](composer-advanced.md).
+If your plugin is simple, doesn't rely on other composer packages, this is all you need. 
+Otherwise you should consider a [more advanced setup](composer-advanced.md).
 
 ## Fields
 
