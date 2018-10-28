@@ -17,8 +17,6 @@ Unofficial documentation for Kirby CMS. It is **not** maintained by the Kirby te
 
 #### Build process
 
-By `rasteiner`. 
-
 - Add this `package.json` in the root of your plugin folder:
 
 ```json
@@ -78,7 +76,7 @@ By `rasteiner`.
 
 #### Work with your field's value
 
-From `phm`. To work with your field’s saved value you need a `value` prop in your `index.js`:
+To work with your field’s saved value you need a `value` prop in your `index.js`:
 
 ```javascript
 props: {
@@ -90,7 +88,7 @@ props: {
 
 #### Tell Kirby there's new content to save
 
-From `Edouard L`. Having an 'input' method, that you call with `@input` will do most of the job:
+Having an 'input' method, that you call with `@input` will do most of the job:
 
 ```javascript
 methods: {
