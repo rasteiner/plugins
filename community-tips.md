@@ -3,6 +3,7 @@ Unofficial documentation for Kirby CMS. It is **not** maintained by the Kirby te
 
 - [Plugin architecture](#plugin-architecture)
   * [Build process](#build-process)
+  * [Composer](#composer)
 - [Fields](#fields)
   * [Work with your field's value](#work-with-your-fields-value)
   * [Tell Kirby there's new content to save](#tell-kirby-theres-new-content-to-save)
