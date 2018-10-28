@@ -70,7 +70,37 @@ Unofficial documentation for Kirby CMS. It is **not** maintained by the Kirby te
   * `npm run build` mandatory to publish your plugin. Will extract js and css.
 
 
-<br/>
+#### Composer
+To make a simple plugin installable with composer, you should create add a `composer.json` file to the plugin root. 
+
+```json
+{
+  "name": "yourname/reponame",
+  "description": "This description will be visible on packagist",
+  "authors": [
+    {
+      "name": "Your name",
+      "email": "your@email.address"
+    }
+  ],
+  "require": {
+    "getkirby/cms": "*"
+  },
+  "license": "ISC",
+  "autoload": {
+    "files": [
+      "index.php"
+    ]
+  }
+}
+```
+
+The dependendy on `getkirby/cms` makes sure your plugin is loaded after kirby is loaded.
+
+The repository you distribute on packagist.org must contain the compiled frontend files (index.js and index.css).  
+If you prefer to not include dist files in your repository, you should consider using a CI service to automatically build and release your plugin. You can read more about this [here](release-zips-with-circleci.md). 
+
+If your plugin is simple, doesn't rely on other composer packages or other php files this is all you need. Otherwise you should consider a [more advanced setup](composer-advanced.md).
 
 ## Fields
 
