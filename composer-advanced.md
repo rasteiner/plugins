@@ -47,7 +47,7 @@ jobs:
       # Download and cache dependencies
       - restore_cache:
           keys:
-          - v1-dependencies-{{ checksum "composer.lock" }}
+          - v1-dependencies-{{ checksum "composer.json" }}
           # fallback to using the latest cache if no exact match is found
           - v1-dependencies-
           
@@ -58,7 +58,7 @@ jobs:
       - save_cache:
           paths:
             - vendor
-          key: v1-dependencies-{{ checksum "composer.lock" }}
+          key: v1-dependencies-{{ checksum "composer.json" }}
 
       - run:
           name: Create zip
